@@ -1,10 +1,28 @@
 "use client"
-import { useState } from 'react';
+//import { useState } from 'react';
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Page() {
-  const [categories, setCategories] = useState([
+  // const [categories, setCategories] = useState([
+  //   {
+  //     name: 'Technology',
+  //     channels: 42,
+  //     image: '/tech.jpg'
+  //   },
+  //   {
+  //     name: 'Gaming',
+  //     channels: 28,
+  //     image: '/gaming.jpg'  
+  //   },
+  //   {
+  //     name: 'Education',
+  //     channels: 35,
+  //     image: '/education.jpg'
+  //   }
+  // ])
+
+  const categories = [
     {
       name: 'Technology',
       channels: 42,
@@ -20,7 +38,7 @@ export default function Page() {
       channels: 35,
       image: '/education.jpg'
     }
-  ])
+  ]
 
   return (
     <div className="p-10">

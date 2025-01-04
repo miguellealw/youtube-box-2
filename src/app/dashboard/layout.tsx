@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-export default function CategoriesLayout({
+export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
@@ -28,7 +28,7 @@ export default function CategoriesLayout({
                   variant="ghost"
                   className="w-full justify-start text-gray-100 hover:bg-gray-100 hover:text-gray-900"
                 >
-                  <Link href="/categories">
+                  <Link href="/dashboard/categories">
                     Categories
                   </Link>
                 </Button>
@@ -37,12 +37,14 @@ export default function CategoriesLayout({
                   variant="ghost"
                   className="w-full justify-start text-gray-100 hover:bg-gray-100 hover:text-gray-900"
                 >
-                  <Link href="/subscriptions">
+                  <Link href="/dashboard/subscriptions">
                     Subscriptions
                   </Link>
                 </Button>
 
                 <hr className="my-4 border-gray-700" />
+
+                {/* Categories */}
                 <h3 className="px-4 py-2 text-xs font-medium text-gray-400">Categories</h3>
                 <div className="space-y-1">
                   <Button
@@ -50,7 +52,7 @@ export default function CategoriesLayout({
                     variant="ghost"
                     className="w-full justify-start text-xs text-gray-100 hover:bg-gray-100 hover:text-gray-900"
                   >
-                    <Link href="/categories/technology">
+                    <Link href="/dashboard/categories/technology">
                       Technology
                     </Link>
                   </Button>
@@ -59,7 +61,7 @@ export default function CategoriesLayout({
                     variant="ghost"
                     className="w-full justify-start text-xs text-gray-100 hover:bg-gray-100 hover:text-gray-900"
                   >
-                    <Link href="/categories/gaming">
+                    <Link href="/dashboard/categories/gaming">
                       Gaming
                     </Link>
                   </Button>
@@ -68,7 +70,7 @@ export default function CategoriesLayout({
                     variant="ghost"
                     className="w-full justify-start text-xs text-gray-100 hover:bg-gray-100 hover:text-gray-900"
                   >
-                    <Link href="/categories/education">
+                    <Link href="/dashboard/categories/education">
                       Education
                     </Link>
                   </Button>
